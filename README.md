@@ -180,7 +180,7 @@ endmodule
 Now after compiling the required files with iverilog (that are given in my RV32IM repository), you should get the following result
 
 ```
-x3 = c8
+x3 = c8 <---- decimal 60
 ``` 
 
 
