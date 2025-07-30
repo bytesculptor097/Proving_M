@@ -1,4 +1,4 @@
-# 🧠 Proving the 'M' in RV32IM 
+# 🧠 Proving the 'M' in [RV32IM](https://github.com/bytesculptor097/RV32IM) 
 
 ## 📌 Overview
 
@@ -177,7 +177,7 @@ module regfile (
 
 endmodule
 ```
-Now after compiling the required files with iverilog (that are given in my RV32IM repositoruy), you should get the following result
+Now after compiling the required files with iverilog (that are given in my RV32IM repository), you should get the following result
 
 ```
 x3 = c8
