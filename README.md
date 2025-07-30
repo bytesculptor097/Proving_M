@@ -34,31 +34,31 @@ always @(*) begin
                     if (funct7 == 7'b0100000)
                         ALUControl = 4'b0110; // SUB
                     else if (funct7 == 7'b0000001)
-                        ALUControl = 4'b1010; // MUL
+                        ALUControl = 4'b1010; // <----- MUL support
                     else
                         ALUControl = 4'b0010; // ADD
                 end
                 3'b100: begin
                     if (funct7 == 7'b0000001)
-                        ALUControl = 4'b1011; // DIV
+                        ALUControl = 4'b1011; // <----- DIV support
                     else
                         ALUControl = 4'b0011; // XOR
                 end
                 3'b101: begin
                     if (funct7 == 7'b0000001)
-                        ALUControl = 4'b1100; // DIVU
+                        ALUControl = 4'b1100; // <----- DIVU support
                     else
                         ALUControl = 4'b1001; // SRL
                 end
                 3'b110: begin
                     if (funct7 == 7'b0000001)
-                        ALUControl = 4'b1101; // REM
+                        ALUControl = 4'b1101; // <------ REM support
                     else
                         ALUControl = 4'b0001; // OR
                 end
                 3'b111: begin
                     if (funct7 == 7'b0000001)
-                        ALUControl = 4'b1110; // REMU
+                        ALUControl = 4'b1110; // <------ REMU support
                     else
                         ALUControl = 4'b0000; // AND
                 end
