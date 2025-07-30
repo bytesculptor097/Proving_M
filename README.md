@@ -125,10 +125,63 @@ module imem (
 
 endmodule
 ```
+**Next**:-
+
+Now as the command takes input from x1 and x2 and then multiplies them, we need to initialize the value to of x1 and x2 in the register file:-
+
+```verilog
 
 
 
 
+
+
+module regfile (
+    input wire clk,
+    input wire reg_write,
+    input wire [4:0] rs1,
+    input wire [4:0] rs2,
+    input wire [4:0] rd,
+    input wire [31:0] wd,
+    output wire [31:0] rs1_val,
+    output wire [31:0] rs2_val,
+    output wire [31:0] x3_debug,
+    output wire [31:0] x5_debug
+);
+
+    reg [31:0] regs [0:31];
+
+
+    // Read logic
+    assign rs1_val = regs[rs1];
+    assign rs2_val = regs[rs2];
+
+    // Write logic
+    always @(posedge clk) begin
+        if (reg_write && rd != 5'd0) begin
+            regs[rd] <= wd;
+            $display("WRITE: x%0d <= %h at time %0t", rd, wd, $time);
+        end
+    end
+
+    // Debug outputs
+    assign x3_debug = regs[3];
+    assign x5_debug = regs[5];
+
+ initial begin
+    regs[1] = 32'd15; // <----- Setting the value of x1 as 15    
+    regs[2] = 32'd4;  // <----- Setting the value of x2 ad 4
+ end
+
+
+
+endmodule
+```
+Now after compiling the required files with iverilog (that are given in my RV32IM repositoruy), you should get the following result
+
+```
+x3 = c8
+``` 
 
 
 
