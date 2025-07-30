@@ -93,9 +93,43 @@ end
 ### 3. ✅ Functional Execution
 
 - Sample test program:
-  ```assembly
-  li x1, 15
-  li x2, 4
-  mul x3, x1, x2     # x3 = 60
-  div x3, x1, x2     # x3 = 3
-  rem x3, x1, x2     # x3 = 3
+Suppose the example:-
+```assembly
+mul x3 x1 x2
+```
+We first need to convert this to hex or binary number to represent this in the instruction memeory of the core
+
+`mul x3 x1 x2` → `022081B3`
+
+So the istruction memory will look like this:-
+
+```verilog
+module imem (
+    input wire clk,
+    input wire we,
+    input wire [31:0] addr,
+    input wire [31:0] din,
+    output reg [31:0] dout
+);
+    reg [31:0] mem [0:1023]; // 4KB RAM
+
+    always @(posedge clk) begin
+        if (we)
+            mem[addr[11:2]] <= din;
+        dout <= mem[addr[11:2]];
+    end
+
+    initial begin
+     mem[0] = 32'h0220E1B3;  // <--------- mul x3 x1 x2
+    end
+
+endmodule
+```
+
+
+
+
+
+
+
+
