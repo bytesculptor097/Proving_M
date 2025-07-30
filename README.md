@@ -101,7 +101,7 @@ We first need to convert this to hex or binary number to represent this in the i
 
 `mul x3 x1 x2` → `022081B3`
 
-## Instruction memeory setup
+### Instruction memeory setup
 So the istruction memory will look like this:-
 
 ```verilog
@@ -126,7 +126,7 @@ module imem (
 
 endmodule
 ```
-## Register file initialization 
+### Register file initialization 
 
 Now as the command takes input from x1 and x2 and then multiplies them, we need to initialize the value to of x1 and x2 in the register file:-
 
@@ -183,7 +183,11 @@ Now after compiling the required files with iverilog (that are given in my RV32I
 ```
 x3 = c8 // ✅ Expected result: 15 * 4 = 60
 
-``` 
+```
+
+## FPGA implementation
+
+ 
 
 
 
