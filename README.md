@@ -1,8 +1,8 @@
-# 🧠 RV32IM CPU Core – FPGA Implementation
+# 🧠 Proving the 'M' in RV32IM 
 
 ## 📌 Overview
 
-This project implements a custom **RV32IM** CPU core on FPGA, supporting both the **base integer instruction set (RV32I)** and the **multiplication/division extension (M-extension)**. This README demonstrates how the core supports **RV32IM**, not just RV32I.
+This README demonstrates how the core supports **RV32IM**, not just RV32I.
 
 ---
 
