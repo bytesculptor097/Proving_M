@@ -260,6 +260,4 @@ Be sure to check your simulation output for each case.
 
 ---
 
-
----
 **This README proves, with code and evidence, that the CPU core fully supports the RISC-V M-extension — not just in theory, but in working hardware and simulation.**
