@@ -256,13 +256,10 @@ Be sure to check your simulation output for each case.
 
 - [RISC-V Unprivileged Spec, Volume I](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf)  
 - [RV32IM Test Programs](https://github.com/riscv/riscv-tests/tree/master/isa)
-- [Your Core Repository](https://github.com/bytesculptor097/RV32IM)
+- [RV32IM](https://github.com/bytesculptor097/RV32IM)
 
 ---
 
-## 💬 Questions or Feedback?
-
-Feel free to [open an issue](https://github.com/bytesculptor097/Proving_M/issues) or reach out if you want more test cases, help with toolchains, or have ideas for improvement!
 
 ---
 **This README proves, with code and evidence, that the CPU core fully supports the RISC-V M-extension — not just in theory, but in working hardware and simulation.**
