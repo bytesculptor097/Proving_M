@@ -233,7 +233,6 @@ Be sure to check your simulation output for each case.
 
 - The logic is synthesizable and has been tested on real FPGAs (e.g., Xilinx, Lattice).
 - You may need to modify the top-level wrapper and memory initialization for your board.
-- The M-extension logic is pipelined so that multiplication/division do not stall the entire CPU (subject to your implementation).
 - For verification, connect the debug outputs (`x3`, etc) to LEDs or UART for visibility.
 
 ![mul_example](https://github.com/user-attachments/assets/716fc647-b07e-4ec8-87e9-1505d07b8315)
