@@ -237,7 +237,7 @@ Be sure to check your simulation output for each case.
 - For verification, connect the debug outputs (`x3`, etc) to LEDs or UART for visibility.
 
 ![mul_example](https://github.com/user-attachments/assets/716fc647-b07e-4ec8-87e9-1505d07b8315)
-*implemented on [VSDSquadronFM](https://www.vlsisystemdesign.com/vsdsquadronfm/), thr output is 00111100 (decimal 60)*
+*implemented on [VSDSquadronFM](https://www.vlsisystemdesign.com/vsdsquadronfm/), the output is 00111100 (decimal 60)*
 
 ---
 
