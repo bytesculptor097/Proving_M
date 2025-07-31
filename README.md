@@ -236,6 +236,9 @@ Be sure to check your simulation output for each case.
 - The M-extension logic is pipelined so that multiplication/division do not stall the entire CPU (subject to your implementation).
 - For verification, connect the debug outputs (`x3`, etc) to LEDs or UART for visibility.
 
+![mul_example](https://github.com/user-attachments/assets/716fc647-b07e-4ec8-87e9-1505d07b8315)
+
+
 ---
 
 ## 🧑‍🔬 Further Verification
